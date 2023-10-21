@@ -17,17 +17,17 @@ tony9402님의 [코딩테스트 대비 문제집 with Baekjoon](https://github.c
 
 | 순번 | Tag                          | 태그                | 문제집    | 풀이 문제 수 | 총 문제 수(추천) |  상태             |
 | :--: | :--------------------------: | :-----------------: | :------:  | :---------:  | :------: |:---------------:|
-| 00 | Data Structure | 자료구조 | [바로가기](./data_structure) | 0 | 16 | 진행중 |
-| 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 0 | 11 | 진행중 |
-| 02 | Tree | 트리 | [바로가기](./tree) | 0 | 15 | 진행중 |
-| 03 | Math | 수학 | [바로가기](./math) | 0 | 18 | 진행중 |
-| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 0 | 27 | 진행중 |
-| 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 0 | 27 | 진행중 |
-| 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 0 | 28 | 진행중 |
-| 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 0 | 13 | 진행중 |
-| 08 | Implementation | 구현 | [바로가기](./implementation) | 0 | 30 | 진행중 |
-| 09 | Graph Traversal | 그래프 탐색 | [바로가기](./graph_traversal) | 0 | 31 | 진행중 |
-| 10 | Brute Force | 완전탐색 | [바로가기](./brute_force) | 0 | 33 | 진행중 |
+| 00 | Data Structure | 자료구조 | [바로가기](./data_structure) | 1 | 16 | 진행중 |
+| 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 1 | 11 | 진행중 |
+| 02 | Tree | 트리 | [바로가기](./tree) | 1 | 15 | 진행중 |
+| 03 | Math | 수학 | [바로가기](./math) | 1 | 18 | 진행중 |
+| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 1 | 27 | 진행중 |
+| 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 1 | 27 | 진행중 |
+| 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 1 | 28 | 진행중 |
+| 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 1 | 13 | 진행중 |
+| 08 | Implementation | 구현 | [바로가기](./implementation) | 1 | 30 | 진행중 |
+| 09 | Graph Traversal | 그래프 탐색 | [바로가기](./graph_traversal) | 1 | 31 | 진행중 |
+| 10 | Brute Force | 완전탐색 | [바로가기](./brute_force) | 1 | 33 | 진행중 |
 | 11 | Simulation | 시뮬레이션 | [바로가기](./simulation) | 0 | 30 | 진행중 |
 | 12 | Binary Search | 이분탐색 | [바로가기](./binary_search) | 0 | 20 | 진행중 |
 | 13 | Backtracking | 백트래킹 | [바로가기](./backtracking) | 0 | 28 | 진행중 |
