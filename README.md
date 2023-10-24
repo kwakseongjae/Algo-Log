@@ -17,11 +17,11 @@ tony9402님의 [코딩테스트 대비 문제집 with Baekjoon](https://github.c
 
 | 순번 | Tag                          | 태그                | 문제집    | 풀이 문제 수 | 총 문제 수(추천) |  상태             |
 | :--: | :--------------------------: | :-----------------: | :------:  | :---------:  | :------: |:---------------:|
-| 00 | Data Structure | 자료구조 | [바로가기](./data_structure) | 1 | 16 | 진행중 |
-| 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 1 | 11 | 진행중 |
-| 02 | Tree | 트리 | [바로가기](./tree) | 1 | 15 | 진행중 |
-| 03 | Math | 수학 | [바로가기](./math) | 1 | 18 | 진행중 |
-| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 1 | 27 | 진행중 |
+| 00 | Data Structure | 자료구조 | [바로가기](./data_structure) | 2 | 16 | 진행중 |
+| 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 2 | 11 | 진행중 |
+| 02 | Tree | 트리 | [바로가기](./tree) | 0 | 15 | 진행중 |
+| 03 | Math | 수학 | [바로가기](./math) | 2 | 18 | 진행중 |
+| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 2 | 27 | 진행중 |
 | 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 1 | 27 | 진행중 |
 | 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 1 | 28 | 진행중 |
 | 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 1 | 13 | 진행중 |
