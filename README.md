@@ -26,8 +26,8 @@ tony9402님의 [코딩테스트 대비 문제집 with Baekjoon](https://github.c
 | 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 4 | 28 | 진행중 |
 | 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 2 | 13 | 진행중 |
 | 08 | Implementation | 구현 | [바로가기](./implementation) | 2 | 30 | 진행중 |
-| 09 | Graph Traversal | 그래프 탐색 | [바로가기](./graph_traversal) | 3 | 31 | 진행중 |
-| 10 | Brute Force | 완전탐색 | [바로가기](./brute_force) | 3 | 33 | 진행중 |
+| 09 | Graph Traversal | 그래프 탐색 | [바로가기](./graph_traversal) | 4 | 31 | 진행중 |
+| 10 | Brute Force | 완전탐색 | [바로가기](./brute_force) | 4 | 33 | 진행중 |
 | 11 | Simulation | 시뮬레이션 | [바로가기](./simulation) | 0 | 30 | 진행중 |
 | 12 | Binary Search | 이분탐색 | [바로가기](./binary_search) | 0 | 20 | 진행중 |
 | 13 | Backtracking | 백트래킹 | [바로가기](./backtracking) | 0 | 28 | 진행중 |
