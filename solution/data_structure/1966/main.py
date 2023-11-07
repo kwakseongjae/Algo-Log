@@ -7,6 +7,7 @@ def input():
     return sys.stdin.readline().rstrip()
 
 T = int(input())
+
 for i in range(T):
     queue1 = deque()
     queue2 = deque()
