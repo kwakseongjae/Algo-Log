@@ -21,7 +21,7 @@ tony9402님의 [코딩테스트 대비 문제집 with Baekjoon](https://github.c
 | 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 5 | 11 | 진행중(임시 완료) |
 | 02 | Tree | 트리 | [바로가기](./tree) | 0 | 15 | 진행중 |
 | 03 | Math | 수학 | [바로가기](./math) | 5 | 18 | 진행중(임시 완료) |
-| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 7 | 27 | 진행중 |
+| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 9 | 27 | 진행중 |
 | 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 4 | 27 | 진행중 |
 | 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 4 | 28 | 진행중 |
 | 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 2 | 13 | 진행중 |
