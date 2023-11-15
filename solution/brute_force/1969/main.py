@@ -11,7 +11,7 @@ arr = []
 word = ""
 dist = 0
 
-for i in range(N):
+for _ in range(N):
     arr.append(input())
     
 for i in range(M):
