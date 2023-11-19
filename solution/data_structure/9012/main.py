@@ -2,14 +2,16 @@
 # Problem: https://www.acmicpc.net/problem/9012
 import sys
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-N = int(input())
+T = int(input()) # 입력 데이터의 수
 
 result = ""
-for i in range(N):
+for i in range(T):
     testcase = input()
+    
     cnt = 0
     for p in testcase:
         cnt += 1 if p == "(" else -1

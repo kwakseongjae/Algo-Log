@@ -2,32 +2,28 @@
 # Problem: https://www.acmicpc.net/problem/10828
 import sys
 
+# 입력 함수 정의
 def input(): 
     return sys.stdin.realine().rstrip()
 
-N = int(input())
+N = int(input()) # 명령어의 수 
 
 stack = []
 for i in range(N):
     cmd = input().split()
-    X = 0
-    if len(cmd) == 2:
-        X = cmd[1]
-    cmd = cmd[0]
     
-    if cmd == "push":
-        stack.append(X)
-    elif cmd == "pop":
+    if cmd[0] == "push":
+        stack.append(cmd[1])
+    elif cmd[0] == "pop":
         if len(stack) == 0:
             print(-1)
         else:
-            print(stack[-1])
-            stack.pop(-1)
-    elif cmd == "size":
+            print(stack.pop())
+    elif cmd[0] == "size":
         print(len(stack))
-    elif cmd == "empty":
+    elif cmd[0] == "empty":
         print(0 if len(stack) else 1)
-    elif cmd == "top":
+    elif cmd[0] == "top":
         if len(stack) == 0:
             print(-1)
         else:
