@@ -3,14 +3,16 @@
 import sys
 from collections import deque
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-N = int(input())
+N = int(input()) # 명령의 수
 
 queue = deque()
 for i in range(N):
     cmd = input().split()
+    
     if cmd[0] == "push_front":
         queue.appendleft(cmd[1])
     elif cmd[0] == 'push_back':

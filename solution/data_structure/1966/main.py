@@ -3,28 +3,28 @@
 import sys
 from collections import deque
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-T = int(input())
+T = int(input()) # 테스트 케이스의 수
 
 for i in range(T):
-    queue1 = deque()
-    queue2 = deque()
-    cnt = 1
-    N, M = map(int, input().split())
-    arr = list(map(int, input().split()))
-    for j in range(len(arr)):
-        queue1.append(arr[j])
-        queue2.append(j)
+    N, M = map(int, input().split()) # N: 문서의 수, M: 궁금한 문서의 현재 위치
+    priority = deque(list(map(int, input().split()))) # N개 문서의 중요도
+    
+    cnt = 0
     while True:
-        if queue1[0] == max(queue1):
-            if queue2[0] == M:
+        best = max(priority)  
+        front = priority.popleft() 
+        M -= 1
+                     
+        if best == front: # 뽑은 숫자가 제일 큰 숫자인 경우
+            cnt += 1 
+            if M < 0: 
                 print(cnt)
                 break
-            else:
-                queue1.popleft()
-                queue2.popleft()
-        else:
-            queue1.rotate(-1)
-            queue2.rotate(-1)                
+        else:   # 뽑은 숫자가 제일 큰 숫자가 아닌 경우
+            priority.append(front) 
+            if M < 0 :  # 제일 앞에서 뽑히면
+                M = len(priority) - 1 # 제일 뒤로 이동

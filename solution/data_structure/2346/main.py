@@ -2,22 +2,21 @@
 # Problem: https://www.acmicpc.net/problem/2346
 import sys
 from collections import deque
+
+#입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-N = int(input())
-queue1 = deque(list(map(int, input().split())))
-queue2 = deque([i for i in range(1, N + 1)])
+N = int(input()) # 풍선의 수
+queue = deque(enumerate(map(int, input().split()))) # (인덱스, 값) 구조로 풍선 정보 저장
 
-while queue1:
-    q = queue1[0]
-    if q > 0:
-        queue1.popleft()
-        queue1.rotate(-q + 1)
-        print(queue2.popleft())
-        queue2.rotate(-q + 1)
-    else:
-        queue1.popleft()
-        queue1.rotate(-q)
-        print(queue2.popleft())
-        queue2.rotate(-q)
+answer = []
+while queue:
+    idx,num = queue.popleft()
+    answer.append(idx+1)
+    if num > 0:
+        queue.rotate(-(num-1))
+    elif num < 0:
+        queue.rotate(-num)
+
+print(' '.join(map(str,answer)))
