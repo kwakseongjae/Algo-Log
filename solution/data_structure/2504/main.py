@@ -2,58 +2,42 @@
 # Problem: https://www.acmicpc.net/problem/2504
 import sys
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-str = input()
-stack = []
+str = input() # 괄호열을 나타내는 문자열
 
-# Check Breacket
-for ch in str:
-    if ch == "(":
-        stack.append("(")
-    elif ch == "[":
-        stack.append("]")
-    elif ch == ")":
-        if stack and stack[-1] == "(":
-            stack.pop(-1)
-        else:
-            print(0)
-            exit(0)
+stack = []
+answer = 0
+tmp = 1 # answer에 더해주기 전 값을 저장하는 임시 변수
+for i in range(len(str)):
+    if str[i] == "(":
+        stack.append(str[i])
+        tmp *= 2
+    elif str[i] == "[":
+        stack.append(str[i])
+        tmp *= 3
+    elif str[i] == ")":
+        if not stack or stack[-1] == "[":
+            answer = 0
+            break
+        if str[i-1] == "(":
+            answer += tmp
+        stack.pop()
+        tmp //= 2
     else:
-        if stack and stack[-1] == "[":
-            stack.pop(-1)
-        else:
-            print(0)
-            exit(0)
-            
+        if not stack or stack[-1] == "(":
+            answer = 0
+            break
+        if str[i-1] == "[":
+            answer += tmp
+        stack.pop()
+        tmp //= 3
+
+# 정답 출력
 if stack:
     print(0)
-    exit(0)
-    
-# compress (add) Integers
-def compress():
-    while len(stack) > 1:
-        a, integer1 = stack[-1]
-        b, integer2 = stack[-2]
-        if a or b:
-            break
-        stack.pop()
-        stack.pop()
-        stack.append((None, integer1 + integer2))
-
-for ch in str:
-    if ch == "(":
-        stack.append(("(", 2))
-    elif ch == "[":
-        stack.append(("[", 3))
-    elif ch == ")" or ch == "]":
-        last1, last2 = stack.pop()
-        if last1 != None:
-            stack.append((None, last2))
-        else:
-            a, b = stack.pop()
-            stack.append((None, last2 * b))
-        compress()
-        
-print(stack[-1][1])
+else:
+    print(answer)
+            
