@@ -3,19 +3,17 @@
 import sys
 from collections import deque
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-N, M = map(int, input().split)
+n, m = map(int, input().split)
 
+s = set([input() for _ in range(n)])
 answer = 0
-dict = {}
-for i in range(N):
-    a = input()
-    dict[a] = 1
-for i in range(M):
-    a = input()
-    if a in dict:
+for i in range(m):
+    x = input()
+    if x in s:
         answer += 1
 
 print(answer)
