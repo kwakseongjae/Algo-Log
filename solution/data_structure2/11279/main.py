@@ -3,14 +3,16 @@
 import sys
 import heapq
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
 N = int(input())
 
 heap = []
-for i in range(N):
+for _ in range(N):
     x = int(input())
+    # minheap을 활용하기 위해 push할 때 음수로 변환하고 pop할 때 양수로 변환
     if x == 0:
         if heap:
             print(-heapq.heappop(heap))
