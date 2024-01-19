@@ -2,6 +2,7 @@
 # Problem: https://www.acmicpc.net/problem/21942
 import sys
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
@@ -14,18 +15,18 @@ def calculate_days_per_month():
 
 month_days = calculate_days_per_month()
 
-def change_str(_str):
-    date, time, item, person = _str.split()
+def parse_info(info):
+    date, time, item, person = info.split()
     _, month, day = map(int, date.split("-")) # 연도 정보는 필요없음
     hour, minute = map(int, time.split(":"))
     return person, item, (month_days[month - 1] + day) * 24 * 60 + hour * 60 + minute
 
-def solution(info, deadline_time, F):
+def solution(info_list, deadline_time, F):
     dic = {}
     people = {}
-    for data in info:
+    for info in info_list:
         result = -1
-        person, item, time = change_str(data)
+        person, item, time = parse_info(info)
         if person not in dic:
             dic[person] = {}
         
@@ -49,15 +50,14 @@ def solution(info, deadline_time, F):
 N, L, F = input().split()
 
 N, F = int(N), int(F)
-
 day, time = L.split("/")
 day = int(day)
 hour, minute = map(int, time.split(":"))
 
 deadline_time = day * 24 * 60 + hour * 60 + minute
-info = []
+info_list = []
 for _ in range(N):
-    _str = input()
-    info.append(_str)
+    info = input()
+    info_list.append(info)
     
-solution(info, deadline_time, F)
+solution(info_list, deadline_time, F)
