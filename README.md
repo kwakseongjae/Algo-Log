@@ -40,3 +40,4 @@ tony9402님의 [코딩테스트 대비 문제집 with Baekjoon](https://github.c
 |  20  |  Minimum Spanning Tree(MST)  | 최소 스패닝 트리 |    [바로가기](./minimum_spanning_tree)     |      0       |        8         |      진행중       |
 |  21  |             Trie             |      트라이      |             [바로가기](./trie)             |      0       |        5         |      진행중       |
 |  22  | Dynamic Programming On Trees |     트리디피     | [바로가기](./dynamic_programming_on_trees) |      0       |        4         |      진행중       |
+|  23  |          Samsung SW          |  삼성역량테스트  |          [바로가기](./samsung_sw)          |      0       |        45        |      진행중       |
