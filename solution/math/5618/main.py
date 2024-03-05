@@ -1,32 +1,23 @@
 # Authored by: kwakseongjae
 # Problem: https://www.acmicpc.net/problem/5618
+# Reference: https://michelangeloo.tistory.com/32
+
 import sys
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
-def GCD(x, y):
-    if y == 0: 
-        return x
-    else:
-        return GCD(y, x%y)
-    
 n = int(input())
-arr = list(map(int, input().split()))
+num_list = list(map(int, input().split()))
 
-gdc = arr[0]
-result = []
-for i in range(1, n):
-    gcd = GCD(gcd, arr[i])
-    
-x = 1
-while x * x <= gcd:
-    if gcd % x == 0:
-        result.append(x)
-        if x * x != gcd:
-            result.append(gcd // x)
-    x += 1
-    
-result.sort()
-print(*result)
-
+min_v = min(num_list)
+for i in range(1, min_v + 1):
+    cnt = 0
+    for num in num_list:
+        if num % i == 0:
+            cnt += 1
+        else:
+            break
+    if cnt == n:
+        print(i)

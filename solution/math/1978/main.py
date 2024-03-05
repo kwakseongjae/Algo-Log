@@ -1,24 +1,26 @@
-# Authored by : gusdn3477
+# Authored by : kwakseongjae
 # Problem: https://www.acmicpc.net/problem/1978
+# Reference: https://yuna0125.tistory.com/187
+
 import sys
 from math import sqrt
 
+# 입력 함수 정의
 def input():
     return sys.stdin.readline().rstrip()
 
 N = int(input())
-arr = list(map(int, input().split()))
+num_list = list(map(int, input().split()))
+result = 0
 
-prime = [1] * 1005
-prime[0] = 0
-prime[1] = 0
-cnt = 0
-for i in range(2, int(sqrt(1005)+1)):
-    for j in range(i*2, 1005, i):
-        if prime[j] == 1:
-            prime[j] = 0
-for i in arr:
-    if prime[i] == 1:
-        cnt += 1
-
-print(cnt)
+for num in num_list:
+    cnt = 0
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                cnt += 1
+        
+        if cnt == 0:
+            result += 1
+    
+print(result)
