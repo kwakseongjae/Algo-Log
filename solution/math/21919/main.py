@@ -1,37 +1,25 @@
 # Authored by: kwakseongjae
 # Problem: https://www.acmicpc.net/problem/21919
+# Reference: https://wizdom.tistory.com/173
+
 import sys
-from math import sqrt
+input = sys.stdin.readline
 
-def input():
-    return sys.stdin.readline().rstrip()
+def is_prime_num(num):
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
-def GCD(x, y):
-    if y == 0:
-        return x   
-    else:
-        return GCD(y, x%y)
-    
-arr = [0] * 100003
-for i in range(2, int(sqrt(1000003)) + 1):
-    for j in range(i + i, 1000003, i):
-        if arr[j] == 0:
-            arr[j] = 1
-
-arr[0] = 1
-arr[1] = 1
-LCM = 1
 N = int(input())
-A = list(map(int, input().split()))
-answer = []
-for i in A:
-    if not arr[i]:
-        answer.append(i)
+num_list = set(list(map(int, input().split())))
 
-if not answer:
+answer = 1
+for num in num_list:
+    if is_prime_num(num):
+        answer *= num
+
+if answer == 1:
     print(-1)
-else:
-    LCM = answer[0]
-    for i in range(1, len(answer)):
-        LCM = answer[i] * LCM // GCD(answer[i], LCM)
-    print(LCM)
+else: 
+    print(answer)

@@ -1,23 +1,18 @@
 # Authored by: kwakseongjae 
 # Problem: https://www.acmicpc.net/problem/21920
-import sys
+# Reference: https://aldrn29.tistory.com/123
 
-def input():
-    return sys.stdin.readline().rstrip()
-
-def GCD(x, y):
-    if y == 0:
-        return x
-    else:
-        return GCD(y, x & y)
+import math
 
 N = int(input())
 A = list(map(int, input().split()))
 X = int(input())
+result = 0
+cnt = 0
 
-answer = []
-for i in A:
-    if GCD(X, i) == 1:
-        answer.append(i)
+for num in A :
+    if math.gcd(num, X) == 1 :
+        result += num
+        cnt += 1
 
-print(sum(answer) / len(answer))
+print(result / cnt)
